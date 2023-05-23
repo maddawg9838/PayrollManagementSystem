@@ -1,11 +1,13 @@
 #include <iostream>
+#include <fstream>
 #include <string>
+
 
 using namespace std;
 
 // Function Prototypes
 void LogIn();
-void ValidateLogIn();
+void ValidateLogIn(string, string, int);
 void Employees();
 void Add();
 void Edit();
@@ -14,9 +16,60 @@ void Formation();
 
 int main()
 {
+  LogIn();
 
-  
 }
+
+/*
+void LogIn()
+{
+  string username, password;
+  int tries = 0;
+  
+  cout << "Please enter your username and password" << endl;
+  cout << "Username: ";
+  getline (cin, username);
+  cout << endl;
+  cout << "Password: ";
+  getline (cin, password);
+  
+  tries++;
+  ValidateLogIn(username, password, tries);
+  
+  if (
+}
+
+void ValidateLogIn(string username, string password, int tries)
+{
+  
+  const maxAttempts = 10;
+  
+  if (matchUsername == true && matchPassword == true)
+  {
+    return;
+  }
+  else if (matchUsername == true && matchPassword == false)
+  {
+    
+    LogIn();
+  }
+  else if (matchUsername == false && matchPassword == true)
+  {
+    
+    LogIn();
+  }
+  else
+  {
+    LogIn();
+    if (tries = 0; tries = maxAttempts; tries++;)
+    {
+      cout << "You have reached the maximum amount of tries" << endl;
+      return;
+    }
+  }
+}
+
+*/
 
 void Add()
 {
@@ -54,7 +107,21 @@ void Add()
     }
     else if (addType == "file")
     {
-
+      /*
+      ofstream filename;
+      filename.open("EmployeeInformation.txt");
+      
+      if (filename)
+      {
+       ifstream >> ID >> name >> title >> address >> salaryType >> salary;
+      }
+      else
+      {
+        cout << "File could not be opened properly";
+      }
+      
+       filename.close();
+      */
     }
     else
     {
